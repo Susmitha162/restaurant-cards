@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .restaurant-cards{
+            margin: 20px;
+        }
+        .restaurant-card{
+            width: 25%;
+            border-radius: 10px;
+            border: solid 1px black;
+
+        }
+        .restaurant-imgage img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            
+        }
+        .group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .restaurant-details{
+            padding:10px;
+        }
+        .rating{
+            background-color: green;
+            color: white;
+            font-weight: 700px;
+            padding:5px;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+        .item-name{
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .price{
+            padding-top: 5px;
+           display: flex;
+
+        }
+        .restaurant-imgage{
+            position: relative;
+
+        }
+        .restaurant-imgage .discount{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 2px;
+
+        }
+        .restaurant-cards{
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media(max-width:780px){
+            .restaurant-card{
+                width:33.3%;
+
+            }
+        }
+        @media(max-width:580px){
+            .restaurant-card{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="restaurant-cards">
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/biryani1.jpg" alt="">
+                <div class="discount"> 50% OFF upto &#x20b9 500</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Biryani</p>
+                <p class="rating">4.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 300</P>
+               </div>
+            </div>
+        </div>
+       <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/chikenkabab.jpg" alt="">
+                <div class="discount"> 50% OFF upto &#x20b9 500</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Chiken kabob</p>
+                <p class="rating">4.8 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 200</P>
+               </div>
+            </div>
+        </div>
+    
+    
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/chikenrole.jpeg" alt="">
+                <div class="discount"> 30% OFF upto &#x20b9 100</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Chiken Role</p>
+                <p class="rating">3.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 190</P>
+               </div>
+            </div>
+        </div>
+    
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/chikentikka5.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 100</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Chiken Tikka</p>
+                <p class="rating">4.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 200</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/fish4.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 600</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Fish</p>
+                <p class="rating">5.0 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 150</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/kaajurice.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 700</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Kaju Rice</p>
+                <p class="rating">4.2 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 150</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/panipuri.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 300</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Panipuri</p>
+                <p class="rating">3.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 50/P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/pulihora.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 100</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Pulihora</p>
+                <p class="rating">2.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 140</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/samosa2.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 100</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Samosa</p>
+                <p class="rating">4.7 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 80</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/vadapav.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 400</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Vadapav</p>
+                <p class="rating">3.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 100</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/vegrice.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 500</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Vegrice</p>
+                <p class="rating">5.0 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 180</P>
+               </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-imgage">
+                <img src="./images/dosa.jpg" alt="">
+                <div class="discount"> 20% OFF upto &#x20b9 100</div>
+            </div>
+            <div class="restaurant-details">
+               <div class="group">
+                <p class="item-name">Dosa</p>
+                <p class="rating">4.6 &#x2605</p>
+               </div> 
+
+               <div class="price">
+                <p >PRICE </p>
+                <P >  : &#X20b9 120</P>
+               </div>
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
